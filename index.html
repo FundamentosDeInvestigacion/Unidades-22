@@ -1,166 +1,307 @@
-<!DOCTYPE html>
-<html>
-<title>FDI Blog</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-    <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/151782/isolated/preview/92af5898d55a2a1a0c648d9f0a3e7050-cabeza-con-el-icono-del-cerebro-by-vexels.png">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
-.w3-bar-block .w3-bar-item {padding:20px}
-    .enlace{
-        text-decoration: none;
-        margin-left: 4%;    
+    <html>
+    <title>Unidad II </title>
+         <head>
+
+    <meta http-equiv="Expires" content="0">
+
+    <meta http-equiv="Last-Modified" content="0">
+
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+
+    <meta http-equiv="Pragma" content="no-cache">
+        </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+        <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/151782/isolated/preview/92af5898d55a2a1a0c648d9f0a3e7050-cabeza-con-el-icono-del-cerebro-by-vexels.png">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Times New Roman", sans-serif}
+    .w3-bar-block .w3-bar-item {padding:20px}
+        .enlace{
+            text-decoration: none;
+            margin-left: 4%;    
+        }
+        html{
+            scroll-behavior: smooth;
+            font-size: 12px;
+        }
+        .iframe-container{
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; 
+      height: 0;
     }
-</style>
-<body>
+    .iframe-container iframe{
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+        #info h3{
+            text-align: left;
+        }
+        #Biblio{
+            text-align: justify;
+            width: 100%;
+        }
+        h4{
+            font-size: 1.3em;
+        }
+    </style>
+    <body>
 
-<!-- Sidebar (hidden by default) -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()"
-  class="w3-bar-item w3-button">Cerrar Menú</a>
-  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Página Principal</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Unidades</a>
-    <ol>
-        <li class="enlace"><a href="" class="enlace">Unidad 1</a></li>
-    </ol>
-</nav>
+    <!-- Sidebar (hidden by default) -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()"
+      class="w3-bar-item w3-button">Cerrar Menú</a>
+      <a href="https://fundamentosdeinvestigacion.github.io/Blog/" onclick="w3_close()" class="w3-bar-item w3-button">Página Principal</a>
+      <a href="https://fundamentosdeinvestigacion.github.io/Unidades/" onclick="w3_close()" class="w3-bar-item w3-button">Unidades</a>
+        <ol>
+            <li class="enlace"><a href="https://fundamentosdeinvestigacion.github.io/Unidades/" class="enlace"><b>Unidad I</b></a></li>
+            <li class="enlace"><a href="https://fundamentosdeinvestigacion.github.io/Unidades/#unidad2" class="enlace"><b>Unidad II</b></a></li>
+            <li class="enlace"><a href="https://fundamentosdeinvestigacion.github.io/Unidades/#unidad3" class="enlace"><b>Unidad III</b></a></li>
+            <li class="enlace"><a href="https://fundamentosdeinvestigacion.github.io/Unidades/#unidad4" class="enlace"><b>Unidad IV</b></a></li>
+            <li class="enlace"><a href="https://fundamentosdeinvestigacion.github.io/Unidades/#unidad5" class="enlace"><b>Normas APA</b></a></li>
+        </ol>
+    </nav>
 
-<!-- Top menu -->
-<div class="w3-top">
-  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
-    <div class="w3-right w3-padding-16">Blog</div>
-    <div class="w3-center w3-padding-16">Fundamentos de Investigación</div>
-  </div>
-</div>
-  
-<!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
-
- <!-- About Section -->
-  <div class="w3-container w3-padding-32 w3-center">  
-    <h3>Tema</h3><br>
-    <img src="/w3images/chef.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
-    <div class="w3-padding-32">
-      <h4><b>I am Who I Am!</b></h4>
-      <h6><i>With Passion For Real, Good Food</i></h6>
-      <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    <!-- Top menu -->
+    <div class="w3-top">
+      <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+        <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+        <div class="w3-right w3-padding-16">Blog</div>
+        <div class="w3-center w3-padding-16">Fundamentos de Investigación</div>
+      </div>
     </div>
-  </div>
-  <hr>
 
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div>
-  
-  <hr id="about">
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
 
-  
-    
-     <!-- First Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+     <!-- About Section -->
+      <div class="w3-container w3-padding-32 w3-center">  
+          <h1><b>Unidad II</b></h1><br>
+          <h2> 2.2 Técnicas de redacción: coherencia, Concordancia</h2>
+
+          <h3><i></i></h3>
+          <p style="text-align: justify;">Redactar adecuadamente se ha convertido en un problema en la actualidad, particularmente en las nuevas generaciones. Esto es consecuencia del excesivo uso de dispositivos electrónicos y de la mensajería instantánea. Ha habido un impacto negativo en la comunicación oral y, sobre todo, escrita, debido a la diversidad de faltas ortográficas y de redacción. Paralelamente, la información cabe en la palma de mano, al alcance del internet, dando lugar a un menor interés en la lectura y escritura; se ha perdido interés y deseo de una correcta búsqueda de información. Toda la problemática ha ocasionado una falta de competencia de los profesionales y futuros profesionales para redactar siguiendo una secuencia clara, ordenada y sin faltas ortográficas.
+    </p>
+        </div>
+
+      </div>
+        <center><img src="https://www.mindmeister.com/es/export/image/756645266?height=600&variable_size=1&width=1200" width="50%"></center>
+
+      <hr>
+        <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+    <div class="w3-container w3-padding-32 w3-center"> 
+
+
+    <div id="info" style="text-align: justify">
+    <h3 id="1">Concordancia Gramatical.</h3>
+    <h4></h4><br>
+              La concordancia gramatical es un recurso de las lenguas para marcar las relaciones gramaticales entre los diversos constituyentes mediante referencias cruzadas. Se lleva a cabo requiriendo que la palabra que ocupa una determinada posición sintáctica tome una u otra forma según algún rasgo determinado por otra palabra con la que "concuerda" en ese rasgo o accidente gramatical. En muchas lenguas indoeuropeas con flexión la concordancia afecta por ejemplo a alguno de estos rasgos: género gramatical, número gramatical, caso gramatical o persona gramatical). También dentro de las lenguas europeas se distinguen al menos dos tipos de concordancia: la nominal y la verbal. En las lenguas romances, en griego y en lenguas eslavas existe la concordancia de polaridad, por la cual en una oración negativa los indefinidos que aparezcan deben tener forma negativa. En el enfoque de la gramática generativa la concordancia gramatical ya sea dentro de un sintagma nominal (o sintagma determinante), la concordancia sujeto-verbo o la concordancia de polaridad, requieren que un elemento (el que obliga la concordancia) esté en una relación de rección propia respecto a los otros elementos concordantes.
+
+    <br><br>
+
+        <h3>Concordancia en español.</h3><br>
+        <h4>Concordancia nominal. </h4><br>
+        Es la coincidencia de género y número: <br>
+         • Entre el sustantivo y el artículo o los adjetivos que lo acompañan: la blanca paloma; esos libros viejos.  <br>
+         • Entre el pronombre y su antecedente o su consecuente: A tus hijas las vi ayer; Les di tu teléfono a los chicos.  <br>
+         • Entre el sujeto y el atributo, el complemento predicativo o el participio del verbo de la pasiva perifrástica: “Mi hijo es un santo; Ella se encontraba cansada; Esas casas fueron construidas a principios de siglo”. 
+    <br><br>
+
+           <h4>Concordancia verbal. </h4><br> 
+        La concordancia verbal es la coincidencia de número gramatical y generalmente de persona gramatical que se da entre el verbo y su sujeto de la misma: 
+         “Ellos cantan muy bien”.
+         Otras concordancias. El español, como la mayoría de lenguas románicas, presenta la concordancia de polaridad, que afecta a los pronombres indefinidos en presencia de un sintagma de negación ocupado por una partícula de polaridad negativa.
+
+
+           <h4>Reglas generales.</h4>
+           1. La coordinación de dos o más sustantivos o pronombres en singular, siempre que cada uno de ellos se refiera a un ente distinto, forma un grupo que concuerda en plural con el adjetivo o el pronombre, o con el verbo del que son sujeto: «Rehogar la cebolla y la zanahoria picadas durante quince minutos»; «El oxígeno, el hidrógeno y el carbono los proporciona el medio»; «La sal y el agua son gratis». 
+         2. La coordinación de dos o más sustantivos o pronombres de diferente género gramatical forma un grupo que concuerda en masculino con el adjetivo o con el pronombre: «Se fríen las rajitas junto con la cebolla y el ajo picados»; «Ahora la casa y el jardín son otros». 
+         3. Si entre dos o más elementos coordinados figura un pronombre de segunda persona (y ninguno de primera), la concordancia con el verbo y con los demás pronombres se establece en segunda persona del plural o, en las zonas del mundo hispánico donde no se usa el pronombre vosotros, sino ustedes, en tercera persona del plural.
+         Existen numerosas excepciones a estas reglas, respecto a las cuales profundiza el Diccionario panhispánico de dudas de la Real Academia Española.
+
+
+
+        <h3 id="2">    La coherencia. </h3>
+
+           Las oraciones coherentes son todos aquellos actos de habla que están bien formados y cuyos elementos constitutivos guardan una relación lógica y consecuente por lo que forman un todo. Este tipo de oraciones producen un mensaje claro y conciso que puede ser considerado como la unidad mínima de un texto. Esto quiere decir que estas oraciones se interrelacionan entre sí para formar párrafos que, a su vez, formarán capítulos. <br><br>
+         Ejemplos: <br>
+         El perro de mi hermano es muy bravo, por eso me mordió ayer en la pierna. <br>
+         Muchas bebidas alcohólicas son resultado de la fermentación. <br>
+         La cerveza sufre este proceso durante 10 días. <br>
+         Todos los nombres propios se deben de iniciar con mayúscula: Pedro, Juan, Rodrigo y María por eso se escriben así. <br>
+          Los gritos me dan miedo. Es mejor que no lo hagas. <br>
+
+
+          La coherencia temática se define como “la medida en que las frases comparten información semántica. O sea, cuando contienen elementos correferentes (que se refieren al mismo concepto)”. 
+         En cuanto a la coherencia temática señalan una serie de recursos muy utilizados en castellano: los pronombres personales (yo, tú, él, ella, etc.) y los demostrativos (éste, ésa, aquél), los sujetos implícitos en la conjugación de los verbos, los adjetivos demostrativos (este, ese, aquel, etc.) y algunos otros adjetivos anafóricos como dicha, tal o presente, y ofrecen una descripción detallada de la utilización de estos recursos y su significado en el mantenimiento de la coherencia temática del texto.<br><br>
+
+         <h4>Coherencia Retorica.</h4>
+
+         Es la medida en que “dos frases desempeñan una función respecto de la otra”, es decir, cual es la relación retorica que se establece entre las frases, por ejemplo, tesis-explicación. 
+         Ambas coherencias no se excluyen mutuamente, sino que se complementan en la construcción de la coherencia global del texto.  
+
+
+     <br><br>
+
+
+
+
+
+
+
+
+    <h3>¡Si deseas ver más información puedes ver el documento en word, ver la presentación o incluso descargarla!</h3>
+
+        <br></div>
+    <center><iframe src="https://onedrive.live.com/embed?cid=A57E4536B1582BF9&resid=A57E4536B1582BF9%21151&authkey=ANVCGkChmM61_c4&em=2" width="90%" height="327" frameborder="0" scrolling="no"></iframe></center>
+
+
+
+
+
+    <div id="Biblio"><h3>Lista de Referencias</h3><br>
+        <ul>
+            <li>Entrada concordancia en la página web del Diccionario panhispánico de dudas de la RAE (http:/ / web. archive. org/ web/ http:/ / www. rae. es/ dpd/ ?key=concordancia)
+
+    </li>
+
+            <li>• Bosque, Ignacio; Gutiérrez-Rexach, Javier (2009). Fundamentos de gramática formal (1ª edición). Madrid: Akal. ISBN 978-84-460-2227-5. </li>
+            <li>     • Chomsky, Noam. 1995. The Minimalist Program. Cambridge, Mass.: The MIT Press. (http:/ / mitpress. mit. edu/ catalog/ item/ default. asp?ttype=2& tid=7508) Eguren, L y Soriano, O (2004). Introducción a la sintaxis minimalista. Gredos. </li>
+            <li>M. A. K. Halliday (1975). Estructura y función del lenguaje. Alianza Editorial.</li>
+            <li>Diccionario panhispánico de dudas de la lengua española en línea (http:/ / web. archive. org/ web/ http:/ / www. rae. es/ dpd/ ?key=concordancia)</li>
+            <li>Becerra, P (2018), Cómo escribir bien: Técnicas básicas de redacción Recuperado de: https://www.youtube.com/watch?v=pAHFTL_SGv4</li>
+            <li>
+    Fundamentos de Investigacion (2018) Tecnicas de redacción: coherencia, concordancia Recuperado de: https://www.youtube.com/watch?v=HnpiGtq9P5A</li>
+
+
+        </ul>
+     </div>       
+
+       <br> 
+
+
+            </div></div>
+
+      <!-- Pagination -->
+      <div class="w3-center w3-padding-32">
+        <div class="w3-bar">
+          <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+        </div>
+      </div>
+
+      <hr id="about">
+        <div  class="iframe-container">
+    <center><iframe width="" height="" src="https://www.youtube.com/embed/pAHFTL_SGv4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center></div>
+        <div  class="iframe-container">
+
+    <center><iframe width="" height="" src="https://www.youtube.com/embed/HnpiGtq9P5A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center></div>
+
+
+
+
+         <!-- First Photo Grid-->
+      <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+        <div class="w3-quarter">
+          <img src="https://definicion.mx/wp-content/uploads/2014/02/comunicacion.jpg" alt="APa" style="width:100%">
+          <h3>Comunicación</h3>
+          <p>Recuperado de: <a href="https://definicion.mx/wp-content/uploads/2014/02/comunicacion.jpg">Enlace</a></p>
+        </div>
+
+        <div class="w3-quarter">
+          <img src="https://www.recursosdeautoayuda.com/wp-content/uploads/2018/01/elementos-de-la-comunicacion.jpg" alt="Apa" style="width:100%">
+          <h3>Comunicación</h3>
+            <p>Recuperado de: <a href="https://www.recursosdeautoayuda.com/wp-content/uploads/2018/01/elementos-de-la-comunicacion.jpg">Enlace</a></p>
+        </div>
+        <div class="w3-quarter">
+          <img src="https://www.eoi.es/blogs/elizabethmontesdeoca/files/2012/06/Comunicacion-3.jpg" alt="Cherries" style="width:100%">
+          <h3>Comunicación</h3>
+            <p>Recuperado de: <a href="https://www.eoi.es/blogs/elizabethmontesdeoca/files/2012/06/Comunicacion-3.jpg">Enlace</a></p>
+        </div>
+
     <div class="w3-quarter">
-      <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
-      <h3>The Perfect Sandwich, A Real NYC Classic</h3>
-      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/steak.jpg" alt="Steak" style="width:100%">
-      <h3>Let Me Tell You About This Steak</h3>
-      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/cherries.jpg" alt="Cherries" style="width:100%">
-      <h3>Cherries, interrupted</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-      <p>What else?</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/wine.jpg" alt="Pasta and Wine" style="width:100%">
-      <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-  </div>
-  
-  <!-- Second Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center">
-    <div class="w3-quarter">
-      <img src="/w3images/popsicle.jpg" alt="Popsicle" style="width:100%">
-      <h3>All I Need Is a Popsicle</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/salmon.jpg" alt="Salmon" style="width:100%">
-      <h3>Salmon For Your Skin</h3>
-      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
-      <h3>The Perfect Sandwich, A Real Classic</h3>
-      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/croissant.jpg" alt="Croissant" style="width:100%">
-      <h3>Le French</h3>
-      <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-  </div>
-  
-  <!-- Footer -->
-  <footer class="w3-row-padding w3-padding-32">
-    <div class="w3-third">
-      <h3>FOOTER</h3>
-      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </div>
-  
-    <div class="w3-third">
-      <h3>BLOG POSTS</h3>
-      <ul class="w3-ul w3-hoverable">
-        <li class="w3-padding-16">
-          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Lorem</span><br>
-          <span>Sed mattis nunc</span>
-        </li>
-        <li class="w3-padding-16">
-          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Ipsum</span><br>
-          <span>Praes tinci sed</span>
-        </li> 
-      </ul>
-    </div>
+          <img src="https://www.centrogf.com/wp-content/uploads/2016/07/comunicacion1.jpg" alt="Consejos" style="width:100%">
+          <h3>Comunicación</h3>
 
-    <div class="w3-third w3-serif">
-      <h3>POPULAR TAGS</h3>
-      <p>
-        <span class="w3-tag w3-black w3-margin-bottom">Investigación</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Conocimiento</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Estudio</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Desarrollo</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Inteligencia</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Conocimiento</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Humano</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Razón</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Informe</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Blog</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fundamentos</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Concordancia</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Experiencia</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Práctica</span>
-      </p>
-    </div>
-  </footer>
+        <p>Recuperado de: <a href="https://www.centrogf.com/wp-content/uploads/2016/07/comunicacion1.jpg">Enlace</a></p>
+        </div>
+      </div>
 
-<!-- End page content -->
-</div>
 
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
 
-</body>
-</html>
+        <div class="w3-container w3-padding-32 w3-center">  
+        <h3>¿Te intereso la información?</h3><br>
+          <h4><b>¡No te Preocupes!</b></h4>
+
+          <h6><i>Puedes descargar la investigacion Completa</i></h6>
+          <p style="text-align: justify;">
+    </p>
+            <form action="https://mega.nz/#!L5sB1I4K!QDSfSXVfqZhbL-8ywMeuUfQrq5QJfk4Mo2dtdutU8to" target="_blank">
+
+              <center>
+
+                  <center>
+                  <a href="https://mega.nz/#!L5sB1I4K!QDSfSXVfqZhbL-8ywMeuUfQrq5QJfk4Mo2dtdutU8to"><button type="" class="w3-button w3-black w3-margin-bottom"><img src="https://images.vexels.com/media/users/3/151782/isolated/preview/92af5898d55a2a1a0c648d9f0a3e7050-cabeza-con-el-icono-del-cerebro-by-vexels.png" style="max-height: 20px;"><i class=""></i> Descargar Información</button></a></center>
+
+            </form>
+        </div>
+
+
+
+      <!-- Footer -->
+      <footer class="w3-row-padding w3-padding-32">
+        <div class="w3-third">
+          <h3>FDI Blog</h3>
+          <p>Nos apasiona la investigación y el desarrollo del conocimiento</p>
+          <p>Powered by <a href="">Alfonso</a></p>
+        </div>
+
+        <div class="w3-third">
+          <h3>BLOG POSTS</h3>
+          <ul class="w3-ul w3-hoverable">
+            <li class="w3-padding-16"><a href="https://fundamentosdeinvestigacion.github.io/Blog/#portfolio">
+              <img src="https://images.vexels.com/media/users/3/151782/isolated/preview/92af5898d55a2a1a0c648d9f0a3e7050-cabeza-con-el-icono-del-cerebro-by-vexels.png" class="w3-left w3-margin-right" style="width:50px"></a>
+              <span class="w3-large">Página Principal</span><br>
+              <span>Inicio</span>
+            </li>
+            <li class="w3-padding-16"><a href="https://fundamentosdeinvestigacion.github.io/Unidades/">
+              <img src="https://images.vexels.com/media/users/3/157272/isolated/preview/e6d8b2a22f0f860af01343af96e94a8a-libros-apilados-vector-by-vexels.png" class="w3-left w3-margin-right" style="width:50px"></a>
+              <span class="w3-large">Unidades</span><br>
+              <span>Nuestro contenido</span>
+            </li> 
+          </ul>
+        </div>
+
+        <div class="w3-third w3-serif">
+          <h3>POPULAR TAGS</h3>
+          <p>
+            <span class="w3-tag w3-black w3-margin-bottom">Investigación</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Conocimiento</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Estudio</span>
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Desarrollo</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Inteligencia</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Conocimiento</span>
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Humano</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Razón</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Informe</span>
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Blog</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fundamentos</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Concordancia</span>
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Experiencia</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Práctica</span>
+          </p>
+        </div>
+      </footer>
+
+    <!-- End page content -->
+        </div>
+
+    <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    </script>
+
+    </body>
+    </html>
